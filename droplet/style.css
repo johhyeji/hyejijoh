@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 200vh; /* allow to scroll later */
+    background: #ffffff;
+    font-family: Georgia, serif;
+}
+
+/* dense txt bg */
+#text-layer {
+    padding: 40px;
+    line-height: 1.6;
+    column-count: 4; 
+    column-gap: 30px;
+}
+
+#droplet {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    pointer-events: none; /*cursor passes through*/
+
+/* fake 3D water effect */
+    background: radial-gradient(
+        circle at 30%, 30%
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.4) 30%,
+        rgba(200, 200, 200, 0.3) 60%,
+        rgba(150, 150, 150, 0.2)
+    );
+
+    box-shadow:
+        inset -8px -8px 12px rgba(255,255,255,0.6),
+        inset 8px 8px 16px rgba(0,0,0,0.15),
+        0 8px 20px rgba(0,0,0,0.25);
+}
