@@ -26,7 +26,6 @@ document.addEventListener("mousemove", (e) => {
     - scale the background
     - shift it so the zoomed content aligns under the droplet
     */
-
     droplet.style.backgroundPosition = 
         `${-mouseX * (zoom - 1)}px ${-mouseY * (zoom -1)}px`;
 
