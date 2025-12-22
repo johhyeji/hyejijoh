@@ -15,4 +15,7 @@
     - crop via `overflow: hidden`
     - make the droplet(lens) track the page correctly
 
+- **For next time**:
+    - JavaScript: viewport vs. mouse position
+
     
