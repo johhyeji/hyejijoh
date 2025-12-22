@@ -12,5 +12,7 @@
 - **What is done**:
     - overlap two text layers together
     - decide the window (droplet)
-    - crop via masking
+    - crop via `overflow: hidden`
+    - make the droplet(lens) track the page correctly
+
     
