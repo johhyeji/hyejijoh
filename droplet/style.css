@@ -7,10 +7,29 @@ body {
 
 /* dense txt bg */
 #text-layer {
+    position: relative;
     padding: 40px;
     line-height: 1.6;
     column-count: 4; 
     column-gap: 30px;
+}
+
+#base-text{
+    color:gray;
+}
+
+#zoom-text-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 40px;
+    line-height: 1.6;
+    column-count: 4; 
+    column-gap: 30px;
+
+    color: blue;
+    pointer-events: none;
 }
 
 #droplet {
@@ -21,16 +40,17 @@ body {
     pointer-events: none; /*cursor passes through*/
 
 /* fake 3D water effect */
+    /* background: red; */
     background: radial-gradient(
-        circle at 30%, 30%
+        circle at 30% 30%,
         rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.4) 30%,
-        rgba(200, 200, 200, 0.3) 60%,
+        rgba(255, 255, 255, 0.4),
+        rgba(200, 200, 200, 0.3),
         rgba(150, 150, 150, 0.2)
     );
 
     box-shadow:
-        inset -8px -8px 12px rgba(255,255,255,0.6),
+        inset -8px -8px 12px rgba(255,255,255,0.6), /* (-) is directional. So left(-), up(-)*/
         inset 8px 8px 16px rgba(0,0,0,0.15),
         0 8px 20px rgba(0,0,0,0.25);
 }
