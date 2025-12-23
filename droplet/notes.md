@@ -18,4 +18,10 @@
 - **For next time**:
     - JavaScript: viewport vs. mouse position
 
+#### Tue-22-Dec
+- JS: 
+    - shift #zoom-text-layer in the opposite direction so the world point under the mouse stays centered in the droplet
+    - use `transform`
+    
+
     
